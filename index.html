@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NASWAP Five-Year Impact Report</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #111111;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .page {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            text-align: center;
+            padding: 14px 20px 8px;
+            color: white;
+            flex: 0 0 auto;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        #book {
+            flex: 1;
+            width: 100%;
+            min-height: 0;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                padding: 8px;
+            }
+
+            .header h1 {
+                font-size: 15px;
+            }
+
+            .header p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="header">
+            <h1>FROM PURPOSE TO IMPACT</h1>
+            <p>NASWAP Program & Student Impact Report — Five Year Review</p>
+        </div>
+
+        <div
+            id="book"
+            data-pdflipbook="naswap-impact-report.pdf"
+            data-display-mode="auto"
+            data-page-numbers="true"
+            data-arrows="true"
+            data-controls="true"
+            data-shadow="always">
+        </div>
+
+    </div>
+
+    <script src="pdflipbook.js"></script>
+
+</body>
+</html>
